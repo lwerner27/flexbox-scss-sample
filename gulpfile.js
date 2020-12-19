@@ -10,6 +10,8 @@ function style() {
             .src("./resources/scss/**/*.scss")
             // Pass that file through the compiler.
             .pipe(sass().on("error", sass.logError))
+            // // Auto prefix css
+            .pipe(autoPrefixer({ cascade: false }))
             // Where do I save the compiled CSS?
             .pipe(gulp.dest("./resources/css"))
             // stream changes to all browsers.
