@@ -1,5 +1,6 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const autoPrefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
 
 // Compile SCSS into CSS
